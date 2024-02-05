@@ -1,0 +1,23 @@
+{
+  "family": "node-task",
+  "containerDefinitions": [
+    {
+      "name": "node-container",
+      "image": "node-ecr:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8081,
+          "hostPort": 8081
+        }
+      ]
+    }
+  ],
+  "cpu": "256",
+  "memory": "512",
+  "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:iam::328270397459:role/node-execution-task-role",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ]
+}
