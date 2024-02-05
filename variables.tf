@@ -1,4 +1,4 @@
-# Variable declarations. 
+# Variable declarations.a 
 variable "name" {
   type = string
   description = "Overarching name attached to all resources for identification purposes."
