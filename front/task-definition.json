@@ -1,9 +1,9 @@
 {
-  "family": "node-task",
+  "family": "chucknorris-task",
   "containerDefinitions": [
     {
-      "name": "node-container",
-      "image": "node-ecr:latest",
+      "name": "chucknorris-container",
+      "image": "chucknorris-ecr:latest",
       "essential": true,
       "portMappings": [
         {
@@ -16,7 +16,7 @@
   "cpu": "256",
   "memory": "512",
   "networkMode": "awsvpc",
-  "executionRoleArn": "arn:aws:iam::328270397459:role/node-execution-task-role",
+  "executionRoleArn": "arn:aws:iam::725769218651:role/chucknorris-execution-task-role",
   "requiresCompatibilities": [
     "FARGATE"
   ]
